@@ -23,7 +23,20 @@ set TENT=rep_%COMPUTERNAME%%BAZ%
 :: Work in the users home directory
 cd %USERPROFILE%
 
-:LAN
-:: local network addresses
-ipconfig /all > %TENT%.txt
+:SYS
+del systum.txt :: remove old file
+:: Make and Model and Memory
+systeminfo.exe > systum.txt
 
+:LAN
+del landis.txt :: remove old file
+:: local network addresses
+ipconfig /all > landis.txt
+
+:SHOW
+:: print the file
+copy systum.txt+landis.txt %TENT%.txt
+del systum.txt
+del landis.txt
+type %TENT%.txt | less
+pause
