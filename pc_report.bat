@@ -29,6 +29,7 @@ del systum.txt :: remove old file
 systeminfo.exe > systum.txt
 
 :DRIVE
+del driv.txt
 wmic logicaldisk list brief > driv.txt
 ::     bios
 
@@ -39,8 +40,9 @@ ipconfig /all > landis.txt
 
 :SHOW
 :: print the file
-copy systum.txt+landis.txt %TENT%.txt
+copy systum.txt+driv.txt+landis.txt %TENT%.txt
 del systum.txt
+del driv.txt
 del landis.txt
 type %TENT%.txt | less
 pause
