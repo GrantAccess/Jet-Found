@@ -1,0 +1,10 @@
+
+Windows 10/ Windows 11 commands:
+mdsched 
+ChkDsk /f 
+ChkDsk /r
+sfc /scannow
+DISM.exe /Online /Cleanup-image /Restorehealth
+Winget upgrade --all
+mrt
+

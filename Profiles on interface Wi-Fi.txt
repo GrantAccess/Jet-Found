@@ -1,0 +1,64 @@
+
+C:\Windows\system32>netsh wlan show profile
+
+Profiles on interface Wi-Fi:
+
+Group policy profiles (read only)
+---------------------------------
+    <None>
+
+User profiles
+-------------
+    All User Profile     : HolidayInn
+    All User Profile     : Lincoln-Green
+    All User Profile     : BTWi-fi
+    All User Profile     : Red Funnel FREE Wi-Fi
+    All User Profile     : WightFibre-963
+    All User Profile     : VM5987067
+
+C:\Windows\system32>netsh wlan show profile "WightFibre-963" key=clear
+
+Profile WightFibre-963 on interface Wi-Fi:
+=======================================================================
+
+Applied: All User Profile
+
+Profile information
+-------------------
+    Version                : 1
+    Type                   : Wireless LAN
+    Name                   : WightFibre-963
+    Control options        :
+        Connection mode    : Connect automatically
+        Network broadcast  : Connect only if this network is broadcasting
+        AutoSwitch         : Do not switch to other networks
+        MAC Randomization  : Disabled
+
+Connectivity settings
+---------------------
+    Number of SSIDs        : 1
+    SSID name              : "WightFibre-963"
+    Network type           : Infrastructure
+    Radio type             : [ Any Radio Type ]
+    Vendor extension          : Not present
+
+Security settings
+-----------------
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Authentication         : WPA2-Personal
+    Cipher                 : GCMP
+    Security key           : Present
+    Key Content            : cricketcricketcricket
+
+Cost settings
+-------------
+    Cost                   : Unrestricted
+    Congested              : No
+    Approaching Data Limit : No
+    Over Data Limit        : No
+    Roaming                : No
+    Cost Source            : Default
+
+
+C:\Windows\system32>
