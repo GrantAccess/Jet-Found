@@ -2,7 +2,7 @@
 
 :: A batch file to report the status of a Computer Under Test
 :: by <https://github.com/GrantAccess/Jet-Found> (CC)
-:: the author has not changed this document since Friday 31 Mar 2023
+:: the author has not changed this document since Saturday 01 Apr 2023
 
 :ONCE
 :: get the date and time of the report.
@@ -27,6 +27,10 @@ cd %USERPROFILE%
 del systum.txt :: remove old file
 :: Make and Model and Memory
 systeminfo.exe > systum.txt
+
+:DRIVE
+wmic logicaldisk list brief > driv.txt
+::     bios
 
 :LAN
 del landis.txt :: remove old file
